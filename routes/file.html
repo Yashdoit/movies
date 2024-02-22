@@ -1,0 +1,31 @@
+<tbody>
+    <tr>
+        <td><%=index+1 %></td>
+        <td><%=item.stateid %><br><%=item.statename %></td>
+        <td><%=item.cityid %><br><%=item.cityname %></td>
+        <td><%=item.cinemaid %><br><%=item.cinemaname %></td>
+        <td><%=item.screenid %><br><%=item.screenname %></td>
+        <td><%=item.moviename %><br><%=item.status %></td>
+        <td><%=item.description %></td>
+        <td><%=item.releasedate %></td>
+        <td><%=item.ticketprice %></td>
+        <td><%=item.actor %></td>
+        <td><%=item.actress %></td>
+        <td><%=item.singers %></td>
+        <td><a href="/movies/show_picture?movieid=<%=item.movieid%>&moviename=<%=item.moviename%>&poster=<%=item.poster%>"><img src="/images/<%=item.poster %>" width="50" height="50"></a></td>
+        <td><a href="/movies/display_movies_by_id?movieid=<%=item.movieid%>" style="text-decoration: none; color: black;">Edit/Delete</a></td>
+    </tr>
+</tbody>
+
+
+
+<div class="showcard">
+    <div class="card" style="width: 18rem;">
+        <a href="/movies/show_picture?movieid=<%=item.movieid%>&moviename=<%=item.moviename%>&poster=<%=item.poster%>"><img src="/images/<%=item.poster %>" class="card-img-top" alt="..." width="50" height="50"></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/movies/display_movies_by_id?movieid=<%=item.movieid%>" class="btn btn-primary" style="text-decoration: none; color: black;">Edit/Delete</a>
+        </div>
+      </div>
+</div>
